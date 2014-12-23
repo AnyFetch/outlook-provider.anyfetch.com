@@ -28,7 +28,7 @@ describe("Workflow", function() {
   });
 
   it("should upload data to AnyFetch", function(done) {
-    this.timeout(50000);
+    this.timeout(120000);
     var nbThreads = 0;
 
     serverConfig.config.retry = 0;
