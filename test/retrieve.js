@@ -30,6 +30,7 @@ describe("Retrieve code", function() {
   });
 
   it("should get all threads", function(done) {
+    this.timeout(50000);
     async.waterfall([
       function callRetrieve(cb) {
         retrieve(token, 0, new Date(1970), [], {}, cb);
@@ -46,6 +47,7 @@ describe("Retrieve code", function() {
   });
 
   it("should list threads modified after specified date", function(done) {
+    this.timeout(50000);
     async.waterfall([
       function callRetrieve(cb) {
         retrieve(token, 0, new Date(2014, 11, 22), [], {}, cb);
