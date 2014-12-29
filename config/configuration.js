@@ -28,6 +28,9 @@ module.exports = {
   office365ClientId: process.env.OUTLOOK_API_ID,
   office365ClientSecret: process.env.OUTLOOK_API_SECRET,
 
+  usersConcurrency: process.env.USERS_CONCURRENCY || 1,
+  concurrency: process.env.CONCURRENCY || 1,
+
   providerUrl: process.env.PROVIDER_URL,
 
   appId: process.env.ANYFETCH_API_ID,
