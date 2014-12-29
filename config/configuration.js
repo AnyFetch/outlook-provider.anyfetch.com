@@ -39,9 +39,8 @@ module.exports = {
   testRefreshToken: process.env.OUTLOOK_TEST_REFRESH_TOKEN,
 
   opbeat: {
-    organization_id: process.env.OPBEAT_ORGANIZATION_ID,
-    app_id: process.env.OPBEAT_APP_ID,
-    secret_token: process.env.OPBEAT_SECRET_TOKEN,
-    silent: true
+    organizationId: process.env.OPBEAT_ORGANIZATION_ID,
+    appId: process.env.OPBEAT_APP_ID,
+    secretToken: process.env.OPBEAT_SECRET_TOKEN
   }
 };
