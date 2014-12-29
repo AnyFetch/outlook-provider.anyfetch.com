@@ -40,9 +40,9 @@ describe("Retrieve code", function() {
 
     async.waterfall([
       function callRetrieve(cb) {
-        retrieve(queues, 2500, token, new Date(1970), {}, cb);
+        retrieve('inbox', queues, 2500, token, new Date(1970), {}, cb);
       },
-      function checkThreads(cb) {
+      function checkThreads(hashedThreads, cb) {
         var threads = queues.addition;
 
         should.exist(threads[0]);
@@ -66,9 +66,9 @@ describe("Retrieve code", function() {
 
     async.waterfall([
       function callRetrieve(cb) {
-        retrieve(queues, 2500, token, new Date(2014, 11, 22), {}, cb);
+        retrieve('inbox', queues, 2500, token, new Date(2014, 11, 22), {}, cb);
       },
-      function checkThreads(cb) {
+      function checkThreads(hashedThreads, cb) {
         var threads = queues.addition;
 
         should.exist(threads[0]);
